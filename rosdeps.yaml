@@ -5,14 +5,23 @@ libogre-dev:
       packages: [ogre1.9]
 
 # Use Gazebo 8 instead of 7.
-gazebo7:
+gazebo:
   osx:
     homebrew:
-      packages: [gazebo8]
-libgazebo7-dev:
+      packages: [gazebo7]
+# libgazebo7-dev:
+#   osx:
+#     homebrew:
+#       packages: [gazebo7]
+
+google-mock:
   osx:
     homebrew:
-      packages: [gazebo8]
+      packages: []
+gtest:
+  osx:
+    homebrew:
+      packages: []
 
 # Don't try to install opencv3
 opencv3:
@@ -87,3 +96,36 @@ python-qt5-bindings:
   osx:
     homebrew:
       packages: []
+# Need to patch in the legacy qt4
+libqt4:
+  osx:
+    homebrew:
+      packages: [qt@4]
+qt4-qmake:
+  osx:
+    homebrew:
+      packages: [qt@4]
+libqt4-dev:
+  osx:
+    homebrew:
+      packages: [qt@4]
+python-qt-bindings:
+  osx:
+    homebrew:
+      packages: [pyqt@4]
+python-qt-bindings-qwt5:
+  osx:
+    homebrew:
+      packages: [cartr/qt4/qwt-qt4]
+python-qt-bindings-webkit:
+  osx:
+    homebrew:
+      packages: [pyqt@4]
+libqt4-opengl-dev:
+  osx:
+    homebrew:
+      packages: [pyqt@4]
+python-qt-bindings-gl:
+  osx:
+    homebrew:
+      packages: [pyqt@4]
